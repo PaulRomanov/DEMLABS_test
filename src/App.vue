@@ -35,18 +35,21 @@ export default {
 .wrapper_app {
   width: 1280px;
   height: 720px;
-  background-color: bisque;
+  background-color: #2D3037;
 }
 .wrapper_main {
   width: 100%;
   height: 673px;
   display: flex;
-  background-color: rgb(110, 89, 129);
+  background-color: #2D3037;
 }
 .wrapper_menu {
   width: 180px;
   height: 100%;
-  background-color: rgb(109, 44, 165);
+  background-color: #2D3037;
+  border-bottom-right-radius: 20px; 
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6), 0 5px 10px rgba(0, 0, 0, 0.6);
+  margin: 0 4px 0 0;
 }
 .wrapper_content {
   width: 1097px;
