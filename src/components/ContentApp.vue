@@ -1,5 +1,7 @@
 <template>
-  <div class="exchange_history"></div>
+  <div class="exchange_history">
+    <ExchangeHistory />
+  </div>
   <div class="wrapper_btns">
     <FilterRadioBtns />
     <div class="wrapper_action">
@@ -7,9 +9,12 @@
       <div class="wrapper_btns_list">
         <CustomButton :buttonText="'Create certificate'" />
         <CustomButton :buttonText="'Import certificate'" />
-        <CustomButton :buttonText="'Export private certificate to public'" :isDisabled="true"/>
-        <CustomButton :buttonText="'Export certificate to mempool'" :isDisabled="true"/>
-        <CustomButton :buttonText="'Delete certificate'" :isDisabled="true"/>
+        <CustomButton
+          :buttonText="'Export private certificate to public'"
+          :isDisabled="true"
+        />
+        <CustomButton :buttonText="'Export certificate to mempool'" :isDisabled="true" />
+        <CustomButton :buttonText="'Delete certificate'" :isDisabled="true" />
       </div>
     </div>
   </div>
@@ -19,12 +24,14 @@
 import "@/assets/css/main.css";
 import FilterRadioBtns from "./FilterRadioBtns.vue";
 import CustomButton from "./CustomButton.vue";
+import ExchangeHistory from "./ExchangeHistory.vue";
 
 export default {
   name: "ContentApp",
   components: {
     FilterRadioBtns,
     CustomButton,
+    ExchangeHistory,
   },
   data() {
     return {};
