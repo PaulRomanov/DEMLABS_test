@@ -11,17 +11,21 @@
         </div>
       </div>
     </div>
-    <div class="wrapper_footer"></div>
+    <div class="wrapper_footer">
+      <FooterApp />
+    </div>
   </div>
 </template>
 
 <script>
 import MenuApp from "./components/MenuApp.vue";
+import FooterApp from "./components/FooterApp.vue";
 
 export default {
   name: "App",
   components: {
     MenuApp,
+    FooterApp,
   },
 };
 </script>
@@ -35,20 +39,20 @@ export default {
 .wrapper_app {
   width: 1280px;
   height: 720px;
-  background-color: #2D3037;
+  background-color: #2d3037;
 }
 .wrapper_main {
   width: 100%;
   height: 673px;
   display: flex;
-  background-color: #2D3037;
+  background-color: #2d3037;
 }
 .wrapper_menu {
   width: 180px;
   height: 100%;
-  background-color: #2D3037;
-  border-bottom-right-radius: 20px; 
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6), 0 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: #2d3037;
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(8, 7, 13, 0.42), 1px 1px 0px 0px #524D64 inset;
   margin: 0 4px 0 0;
 }
 .wrapper_content {
@@ -60,7 +64,8 @@ export default {
   width: 100%;
   height: 42px;
   margin-top: 5px;
-  background-color: rgb(42, 28, 54);
+  background-color: #2e3138;
+  box-shadow: 5px -5px 10px 0px rgba(8, 7, 13, 0.42), 1px 1px 0px 0px #524d64 inset;
 }
 .wrapper_search {
   width: 100%;
