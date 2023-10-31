@@ -1,24 +1,12 @@
-# demlabs_test
 
-## Project setup
-```
-npm install
-```
+# Техническое задание  
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Сверстать экран с функционирующим меню.  
+Требования:  
+1. Фреймворки: Vue(2/3)/Nuxt  
+2. Пиксель перфект: на разрешении макета 1280px * 720px вёрстка должна в точности повторять макет (важно)  
+3. Адаптив и десктоп можно выполнить на своё усмотрение  
+4. Использование препроцессоров и UI библиотек на выбор исполнителя (в проектах используется SASS)  
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![image](https://github.com/PaulRomanov/demlabs_test/assets/60575337/a37fae87-d664-4bc5-95c0-2858076a04b0)  
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
