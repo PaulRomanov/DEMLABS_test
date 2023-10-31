@@ -5,7 +5,9 @@
         <MenuApp />
       </div>
       <div class="wrapper_content">
-        <div class="wrapper_search"></div>
+        <div class="wrapper_search">
+        <SearchApp />
+        </div>
         <div class="content">
           <router-view></router-view>
         </div>
@@ -20,12 +22,14 @@
 <script>
 import MenuApp from "./components/MenuApp.vue";
 import FooterApp from "./components/FooterApp.vue";
+import SearchApp from "./components/SearchApp.vue";
 
 export default {
   name: "App",
   components: {
     MenuApp,
     FooterApp,
+    SearchApp,
   },
 };
 </script>
@@ -58,7 +62,6 @@ export default {
 .wrapper_content {
   width: 1097px;
   height: 100%;
-  background-color: rgb(62, 1, 120);
 }
 .wrapper_footer {
   width: 100%;
@@ -70,12 +73,14 @@ export default {
 .wrapper_search {
   width: 100%;
   height: 60px;
-  background-color: rosybrown;
+  border-radius: 0px 0px 0px 16px;
+  background-color: #2e3138;
+  box-shadow: 5px 5px 10px 0px rgba(8, 7, 13, 0.42);
+  padding: 6px 0 0 27px;
 }
 .content {
   width: 100%;
   height: 613px;
-  background-color: brown;
   display: flex;
 }
 </style>
